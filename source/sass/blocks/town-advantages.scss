@@ -1,0 +1,22 @@
+.town-advantages__list {
+  padding: 35px 0;
+  text-align: left;
+  background-color: $white;
+}
+
+.town-advantages__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.town-advantages__title {
+  margin: 0;
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 21px;
+  color: $black;
+}
+
+.town-advantages__text {
+  margin: 0;
+  color: $grey-700;
+}
