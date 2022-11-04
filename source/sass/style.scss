@@ -1,15 +1,22 @@
+//Global
+
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/variables.scss";
 
+//Blocks
+
 @import "blocks/advantages.scss";
 @import "blocks/button.scss";
 @import "blocks/copyright.scss";
+@import "blocks/description.scss";
 @import "blocks/main-nav.scss";
+@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/page.scss";
+@import "blocks/review-form.scss";
 @import "blocks/search.scss";
 @import "blocks/social.scss";
 @import "blocks/town-advantages.scss";
