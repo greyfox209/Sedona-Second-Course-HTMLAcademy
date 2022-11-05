@@ -1,0 +1,21 @@
+.field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.field__label {
+  margin-right: 13px;
+  color: $grey-700;
+}
+
+.field__input {
+  padding: 18px 22px 14px;
+  background-color: $grey-200;
+  border: none;
+}
+
+.field__input::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+}

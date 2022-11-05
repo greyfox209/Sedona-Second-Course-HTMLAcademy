@@ -1,0 +1,27 @@
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form__label {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.feedback-form__text {
+  width: 280px;
+  margin-bottom: 51px;
+  padding: 13px 22px 29px;
+  background-color: $grey-200;
+  font-family: inherit;
+  border: none;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.feedback-form__text::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}

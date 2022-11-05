@@ -1,11 +1,14 @@
 .button {
   display: inline-block;
-  padding: 16px 47px;
+  width: 280px;
+  padding: 16px 0;
   text-align: center;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: $white;
   background-color: $blue;
+  border: none;
   cursor: pointer;
 }

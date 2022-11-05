@@ -4,19 +4,32 @@
 @import "global/global.scss";
 @import "global/variables.scss";
 
-//Blocks
+//Blocks:
+//Header
 
-@import "blocks/advantages.scss";
-@import "blocks/button.scss";
-@import "blocks/copyright.scss";
-@import "blocks/description.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/map.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/page.scss";
-@import "blocks/review-form.scss";
-@import "blocks/search.scss";
-@import "blocks/social.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+
+//Main
+
+@import "blocks/page-main.scss";
+@import "blocks/description.scss";
+@import "blocks/advantages.scss";
 @import "blocks/town-advantages.scss";
+@import "blocks/review-form.scss";
+@import "blocks/form-group.scss";
+@import "blocks/field.scss";
+@import "blocks/form-list.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/feedback-form.scss";
+@import "blocks/search.scss";
+@import "blocks/map.scss";
+
+//Footer
+
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";

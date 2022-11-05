@@ -48,72 +48,72 @@
     <section class="review-form">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <fieldset class="review-form__item login-form">
-          <p class="review-form__title">Представьтесь:</p>
-          <div class="login-form__field field">
+        <fieldset class="review-form__item form-group form-group--login">
+          <p class="form-group__title">Представьтесь:</p>
+          <div class="form-group__field field">
             <label class="field__label" for="login-name">Имя*:</label>
             <input class="field__input" id="login-name" type="text" name="name" placeholder="Петр">
           </div>
-          <div class="login-form__field field">
+          <div class="form-group__field field">
             <label class="field__label" for="login-surname">Фамилия*:</label>
             <input class="field__input" id="login-surname" type="text" name="surname" placeholder="Иванов">
           </div>
-          <div class="login-form__field field">
+          <div class="form-group__field field">
             <label class="field__label" for="login-patronymic">Отчество:</label>
             <input class="field__input" id="login-patronymic" type="text" name="patronymic" placeholder="Александрович">
           </div>
         </fieldset>
-        <fieldset class="review-form__item contact-form">
-          <p class="review-form__title">Контактная информация:</p>
-          <div class="contact-form__field field">
+        <fieldset class="review-form__item form-group form-group--contacts">
+          <p class="form-group__title">Контактная информация:</p>
+          <div class="form-group__field field">
             <label class="field__label" for="telephone">Контактный телефон*:</label>
             <input class="field__input" id="telephone" type="text" name="telephone" placeholder="Введите телефон">
           </div>
-          <div class="contact-form__field field">
+          <div class="form-group__field field">
             <label class="field__label" for="e-mail">Электронная почта*:</label>
             <input class="field__input" id="e-mail" type="text" name="e-mail" placeholder="Введите e-mail">
           </div>
         </fieldset>
-        <fieldset class="review-form__item impression-form">
-          <legend class="review-form__title">Ваше общее впечатление:</legend>
-          <ul class="impression-form__list">
+        <fieldset class="review-form__item form-list">
+          <legend class="form-list__title">Ваше общее впечатление:</legend>
+          <ul class="form-list__list">
             <li class="radio">
-              <input class="visually-hidden radio__input" type="radio" checked name="impression"
+              <input class="radio__input" type="radio" checked name="impression"
                 value="positive" id="positive-review">
               <label class="radio__label" for="positive-review">Скорее положительное</label>
             </li>
             <li class="radio">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="negative"
+              <input class="radio__input" type="radio" name="impression" value="negative"
                 id="negative-review">
               <label class="radio__label" for="negative-review">Скорее отрицательное</label>
             </li>
             <li class="radio">
-              <input class="visually-hidden radio__input" type="radio" name="impression" value="indefinite"
+              <input class="radio__input" type="radio" name="impression" value="indefinite"
                 id="indefinite-review">
               <label class="radio__label" for="indefinite-review">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="review-form__item attractions-form">
-          <legend class="review-form__title">Посещенные достопримечательности:</legend>
-          <ul class="attractions-form__list">
+        <fieldset class="review-form__item form-list">
+          <legend class="form-list__title">Посещенные достопримечательности:</legend>
+          <ul class="form-list__list">
             <li class="checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked
+              <input class="checkbox__input" type="checkbox" checked
                 name="bridge" id="review-bridge">
               <label class="checkbox__label" for="review-bridge">Мост Дьявола</label>
             </li>
             <li class="checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked
+              <input class="checkbox__input" type="checkbox" checked
                 name="mountain" id="review-mountain">
               <label class="checkbox__label" for="review-mountain">Гора-Колокол</label>
             </li>
             <li class="checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" checked
+              <input class="checkbox__input" type="checkbox" checked
                 name="park" id="review-park">
               <label class="checkbox__label" for="review-park">Слайд-парк</label>
             </li>
             <li class="checkbox">
-              <input class="visually-hidden checkbox__input" type="checkbox" name="rocks" id="review-rocks">
+              <input class="checkbox__input" type="checkbox" name="rocks" id="review-rocks">
               <label class="checkbox__label" for="review-bridge">Красные скалы</label>
             </li>
           </ul>
