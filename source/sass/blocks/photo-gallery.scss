@@ -1,0 +1,28 @@
+.photo-gallery {
+  line-height: 24px;
+}
+
+.photo-gallery__item {
+  padding: 21px 0 15px;
+  border-top: 1px solid $grey-300;
+}
+
+.photo-gallery__image {
+  margin-bottom: 11px;
+}
+
+.photo-gallery__title {
+  margin: 0;
+  margin-bottom: 1px;
+  font-weight: 700;
+}
+
+.photo-gallery__text {
+  margin: 0;
+  margin-bottom: 13px;
+  text-transform: none;
+}
+
+.photo-gallery__likes {
+  font-weight: 700;
+}

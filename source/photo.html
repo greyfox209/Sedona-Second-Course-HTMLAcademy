@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -34,8 +35,11 @@
     </nav>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Фото и видео города Седона</h1>
-    <section class="description">
+    <div class="page-main__intro">
+      <h1 class="visually-hidden">Фото и видео города Седона</h1>
+      <img class="page-main__intro--image" src="img/intro-text-formpage.svg" width="230" height="40" alt="Sedona">
+    </div>
+    <section class="page-main__catalog-description-wrapper description">
       <p class="description__title">Фото и видео</p>
       <p class="description__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
         политике и экономике.</p>
@@ -45,73 +49,75 @@
       <ul class="photo-gallery__list">
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/photo-1-mobile.jpg" width="280" height="280" alt="Закат на въезде в город">
+            <img class="photo-gallery__image" src="img/gallery/photo-1-mobile.jpg" width="280" height="280"
+              alt="Закат на въезде в город">
           </a>
-          <div class="photo-gallery-description">
-            <p class="photo-gallery-description__title">Неродные просторы</p>
-            <p class="photo-gallery-description__text">Автор фото: Борис</p>
-            <div class="photo-gallery-description__likes likes">
-              <span class="likes__amount">1350</span>
-            </div>
-          </div>
+          <p class="photo-gallery__title">Неродные просторы</p>
+          <p class="photo-gallery__text">Автор фото: Борис</p>
+          <span class="photo-gallery__likes">1350</span>
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/photo-2-mobile.jpg" width="280" height="280" alt="Кактус на фоне гор">
+            <img class="photo-gallery__image" src="img/gallery/photo-2-mobile.jpg" width="280" height="280"
+              alt="Кактус на фоне гор">
           </a>
-          <div class="photo-gallery-description">
-            <p class="photo-gallery-description__title">Местная растительность</p>
-            <p class="photo-gallery-description__text">Автор фото: Сергей</p>
-            <div class="photo-gallery-description__likes likes">
-              <span class="likes__amount">143</span>
-            </div>
-          </div>
+          <p class="photo-gallery__title">Местная растительность</p>
+          <p class="photo-gallery__text">Автор фото: Сергей</p>
+          <span class="photo-gallery__likes">143</span>
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/photo-3-mobile.jpg" width="280" height="280" alt="Горная дорога">
+            <img class="photo-gallery__image" src="img/gallery/photo-3-mobile.jpg" width="280" height="280"
+              alt="Горная дорога">
           </a>
-          <div class="photo-gallery-description">
-            <p class="photo-gallery-description__title">Дорога на север</p>
-            <p class="photo-gallery-description__text">Автор фото: Петр</p>
-            <div class="photo-gallery-description__likes likes">
-              <span class="likes__amount">96</span>
-            </div>
-          </div>
+          <p class="photo-gallery__title">Дорога на север</p>
+          <p class="photo-gallery__text">Автор фото: Петр</p>
+          <span class="photo-gallery__likes">96</span>
         </li>
         <li class="photo-gallery__item">
           <a class="photo-gallery__link" href="#">
-            <img class="photo-gallery__image" src="img/gallery/photo-4-mobile.jpg" width="280" height="280" alt="Горный выступ в каньоне">
+            <img class="photo-gallery__image" src="img/gallery/photo-4-mobile.jpg" width="280" height="280"
+              alt="Горный выступ в каньоне">
           </a>
-          <div class="photo-gallery-description">
-            <p class="photo-gallery-description__title">Мост дьявола</p>
-            <p class="photo-gallery-description__text">Автор фото: Антон</p>
-            <div class="photo-gallery-description__likes likes">
-              <span class="likes__amount">254</span>
-            </div>
-          </div>
+          <p class="photo-gallery__title">Мост дьявола</p>
+          <p class="photo-gallery__text">Автор фото: Антон</p>
+          <span class="photo-gallery__likes">254</span>
         </li>
       </ul>
     </section>
-    <section class="video-gallery">
+    <section class="page-main__video-gallery-wrapper video-gallery">
       <h2 class="visually-hidden">Видео о Седоне</h2>
-      <div class="video-gallery__desciption">
-        <p class="video-gallery__description__title">Все еще сомневаетесь?</p>
-        <p class="video-gallery__description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не
+      <div class="video-gallery__desciption desciption">
+        <p class="description__title">Все еще сомневаетесь?</p>
+        <p class="description__text">Смотрите видеопрезентацию и скорее за билетами, пока они не
           подорожали в очередной
           раз!</p>
       </div>
       <div class="video-gallery__item">
         <a class="video-gallery__link" href="#">
-          <img class="video-gallery__image" src="img/gallery/video-mobile.jpg" width="320" height="200" alt="Видео о Седоне">
+          <img class="video-gallery__image" src="img/gallery/video-mobile.jpg" width="320" height="200"
+            alt="Видео о Седоне">
         </a>
-        <div class="video-gallery__panel"></div>
+        <div class="video-gallery__panel panel">
+          <div class="panel__bar">
+            <div class="panel__handle" tabindex="0"></div>
+          </div>
+          <button class="panel__button panel__button--play" type="button">
+            <span class="visually-hidden">Повторить</span>
+          </button>
+          <button class="panel__button panel__button--subtitles" type="button">
+            <span class="visually-hidden">Подключить субтитры</span>
+          </button>
+          <button class="panel__button panel__button--fullscreen" type="button">
+            <span class="visually-hidden">Развернуть на весь экран</span>
+          </button>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <p class="page-footer__item">#visitsedona</p>
-    <div class="page-footer__social social">
+    <div class="page-footer__item social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="social__list">
         <li class="social__item">
