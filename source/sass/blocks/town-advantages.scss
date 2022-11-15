@@ -1,7 +1,19 @@
+.town-advantages {
+  grid-column: 1 / -1;
+  order: 3;
+}
+
 .town-advantages__list {
   padding: 35px 0;
   text-align: left;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .town-advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .town-advantages__item:not(:last-child) {
