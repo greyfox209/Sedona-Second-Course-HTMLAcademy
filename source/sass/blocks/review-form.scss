@@ -7,3 +7,28 @@
 .review-form__item:nth-child(5) {
   padding-bottom: 51px;
 }
+
+.review-form__button {
+  width: 280px;
+}
+
+.review-form__comment {
+  margin: 0;
+}
+
+@media (max-width: $mobile-width) {
+  .review-form__comment {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review-form__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-form__button {
+    width: 100%;
+  }
+}

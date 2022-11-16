@@ -24,3 +24,9 @@
   margin-bottom: 49px;
   border-top: 1px solid $grey-300;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__review-form-wrapper {
+    margin-bottom: 61px;
+  }
+}

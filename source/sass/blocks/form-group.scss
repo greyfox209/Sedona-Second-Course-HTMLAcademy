@@ -4,3 +4,9 @@
   font-size: 18px;
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .form-group--contacts {
+    grid-column: 1 / -1;
+  }
+}

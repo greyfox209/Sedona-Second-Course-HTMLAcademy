@@ -10,7 +10,6 @@
 }
 
 .feedback-form__text {
-  width: 280px;
   padding: 13px 22px 29px;
   background-color: $grey-200;
   font-family: inherit;
@@ -23,4 +22,10 @@
   font-size: 18px;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback-form {
+    grid-column: 1 / -1;
+  }
 }

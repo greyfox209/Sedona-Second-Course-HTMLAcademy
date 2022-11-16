@@ -11,3 +11,18 @@
   font-weight: bold;
   text-transform: none;
 }
+
+@media (min-width: $tablet-width) {
+  .form-list--impression {
+    order: -1;
+  }
+
+  .form-list--attractions {
+    grid-column: 1 / -1;
+  }
+
+  .form-list--attractions .form-list__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
