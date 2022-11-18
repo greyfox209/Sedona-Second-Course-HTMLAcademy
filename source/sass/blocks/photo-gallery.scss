@@ -26,3 +26,20 @@
 .photo-gallery__likes {
   font-weight: 700;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-gallery__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .photo-gallery__item:first-child {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-gallery__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

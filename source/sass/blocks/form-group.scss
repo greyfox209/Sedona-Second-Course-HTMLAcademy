@@ -5,8 +5,24 @@
   font-weight: 700;
 }
 
+.form-group__field--wrapper .form-group__field {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
   .form-group--contacts {
     grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-group__field--wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .form-group--contacts .form-group__field {
+    display: block;
   }
 }
