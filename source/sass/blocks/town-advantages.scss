@@ -3,16 +3,15 @@
 }
 
 .town-advantages__list {
-  padding: 35px 0;
+  padding-top: 35px;
+  padding-bottom: 35px;
   text-align: left;
   background-color: $white;
 }
 
-@media (min-width: $tablet-width) {
-  .town-advantages__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-  }
+.town-advantages__item {
+  padding-left: 70px;
+  padding-right: 20px;
 }
 
 .town-advantages__item:not(:last-child) {
@@ -30,4 +29,38 @@
 .town-advantages__text {
   margin: 0;
   color: $grey-700;
+}
+
+@media (max-width: $mobile-width) {
+  .town-advantages__item--text-wrap {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .town-advantages__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 158px;
+    padding-bottom: 59px;
+    text-align: center;
+  }
+
+  .town-advantages__item {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .town-advantages__item--souvenirs {
+    padding-left: 31px;
+    padding-right: 31px;
+  }
+
+  .town-advantages__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .town-advantages__text {
+    line-height: 21px;
+  }
 }
