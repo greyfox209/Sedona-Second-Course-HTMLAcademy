@@ -55,7 +55,11 @@
 }
 
 @media (max-width: $mobile-width) {
-  .town-advantages__item--text-wrap {
+  .town-advantages__item--text-wrap-tablet {
+    display: none;
+  }
+
+  .town-advantages__item--text-wrap-desktop {
     display: none;
   }
 }
@@ -105,5 +109,28 @@
 
   .town-advantages__text {
     line-height: 21px;
+  }
+
+  .town-advantages__item--text-wrap-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .town-advantages__list {
+    padding-bottom: 83px;
+  }
+
+  .town-advantages__item {
+    padding-left: 59px;
+    padding-right: 59px;
+  }
+
+  .town-advantages__item::before {
+    left: 160px;
+  }
+
+  .town-advantages__item--text-wrap-desktop {
+    display: block;
   }
 }

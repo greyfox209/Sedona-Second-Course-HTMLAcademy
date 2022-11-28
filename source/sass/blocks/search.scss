@@ -46,3 +46,15 @@
     width: 458px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .search {
+    padding-bottom: 66px;
+  }
+
+  .search__description {
+    margin-bottom: 42px;
+    padding-left: 383px;
+    padding-right: 382px;
+  }
+}
