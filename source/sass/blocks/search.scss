@@ -6,6 +6,8 @@
 .search__title {
   margin: 0;
   margin-bottom: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
   font-weight: 700;
   font-size: 21px;
 }
@@ -13,9 +15,34 @@
 .search__description {
   margin: 0;
   margin-bottom: 27px;
-  line-height: 21px;
+  padding-left: 30px;
+  padding-right: 29px;
+  line-height: 24px;
 }
 
 .search__button {
   width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .search {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
+
+  .search__title {
+    margin-bottom: 34px;
+    font-size: 30px;
+  }
+
+  .search__description {
+    max-width: 435px;
+    margin-bottom: 37px;
+    padding-left: 167px;
+    padding-right: 166px;
+  }
+
+  .search__button {
+    width: 458px;
+  }
 }
