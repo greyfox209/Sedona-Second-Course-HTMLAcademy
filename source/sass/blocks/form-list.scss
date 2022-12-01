@@ -15,15 +15,37 @@
 @media (min-width: $tablet-width) {
   .form-list--impression {
     order: -1;
+    padding-bottom: 76px;
+  }
+
+  .form-list__title {
+    font-size: 21px;
+  }
+
+  .form-list--impression .form-list__title {
+    margin-bottom: 58px;
   }
 
   .form-list--attractions {
     grid-column: 1 / -1;
+    padding-bottom: 41px;
   }
 
   .form-list--attractions .form-list__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .form-list--attractions .form-list__title {
+    margin: 0 auto;
+    max-width: 308px;
+    text-align: center;
+  }
+
+  .form-list--attractions .form-list__title {
+    margin-bottom: 47px;
   }
 }
 
@@ -32,3 +54,4 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
