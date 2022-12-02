@@ -2,6 +2,7 @@
   margin: 0;
   margin-bottom: 17px;
   padding: 0;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
 }
@@ -18,12 +19,23 @@
     padding-bottom: 76px;
   }
 
+  .form-list--impression::after {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 1px;
+    height: 292px;
+    background-color: $grey-300;
+    content: "";
+  }
+
   .form-list__title {
     font-size: 21px;
   }
 
   .form-list--impression .form-list__title {
     margin-bottom: 58px;
+    text-align: left;
   }
 
   .form-list--attractions {
@@ -41,11 +53,31 @@
   .form-list--attractions .form-list__title {
     margin: 0 auto;
     max-width: 308px;
-    text-align: center;
   }
 
   .form-list--attractions .form-list__title {
+    position: relative;
     margin-bottom: 47px;
+  }
+
+  .form-list--attractions .form-list__title::before {
+    position: absolute;
+    top: 26px;
+    left: -169px;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
+  }
+
+  .form-list--attractions .form-list__title::after {
+    position: absolute;
+    top: 26px;
+    right: -169px;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
   }
 }
 

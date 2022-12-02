@@ -1,4 +1,5 @@
 .review-form__item {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 30px;
 }
@@ -12,10 +13,22 @@
 }
 
 .review-form__comment {
+  justify-self: end;
+  align-self: center;
   margin: 0;
 }
 
 @media (max-width: $mobile-width) {
+  .review-form__item::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
+  }
+
   .review-form__comment {
     display: none;
   }

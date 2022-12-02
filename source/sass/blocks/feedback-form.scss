@@ -11,6 +11,7 @@
 
 .feedback-form__text {
   padding: 13px 22px 29px;
+  min-height: 160px;
   background-color: $grey-200;
   font-family: inherit;
   border: none;
@@ -27,5 +28,36 @@
 @media (min-width: $tablet-width) {
   .feedback-form {
     grid-column: 1 / -1;
+  }
+
+  .feedback-form__label {
+    position: relative;
+    margin-bottom: 54px;
+    text-align: center;
+    font-size: 21px;
+  }
+
+  .feedback-form__label::before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
+  }
+
+  .feedback-form__label::after {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
+  }
+
+  .feedback-form__text {
+    padding: 18px 21px 24px;
   }
 }

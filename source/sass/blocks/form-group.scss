@@ -7,7 +7,7 @@
 
 .form-group--login .field__input {
   flex-grow: 1;
-  min-width: 140px;
+  min-width: 130px;
 }
 
 .form-group--contacts .form-group__field {
@@ -23,6 +23,7 @@
 .form-group__title {
   margin: 0;
   margin-bottom: 21px;
+  text-align: center;
   font-size: 18px;
   font-weight: 700;
 }
@@ -39,6 +40,11 @@
 
   .form-group--login .form-group__title {
     margin-bottom: 54px;
+    text-align: left;
+  }
+
+  .form-group--login .form-group__field {
+    max-width: 266px;
   }
 
   .form-group--contacts {
@@ -46,8 +52,28 @@
   }
 
   .form-group--contacts .form-group__title {
+    position: relative;
     margin-bottom: 20px;
-    text-align: center;
+  }
+
+  .form-group--contacts .form-group__title::before {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
+  }
+
+  .form-group--contacts .form-group__title::after {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    width: 123px;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
   }
 }
 
