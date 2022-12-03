@@ -85,5 +85,15 @@
   .form-list--attractions .form-list__list {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .form-list--attractions .form-list__title::before {
+    width: 280px;
+    left: -326px;
+  }
+
+  .form-list--attractions .form-list__title::after {
+    width: 280px;
+    right: -326px;
+  }
 }
 

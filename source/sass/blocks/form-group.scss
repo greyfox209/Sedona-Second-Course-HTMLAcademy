@@ -28,6 +28,12 @@
   font-weight: 700;
 }
 
+@media (max-width: $mobile-width) {
+  .form-group--contacts .form-group__field {
+    max-width: 280px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-group--login {
     padding-left: 58px;
@@ -58,7 +64,7 @@
 
   .form-group--contacts .form-group__title::before {
     position: absolute;
-    top: 12px;
+    top: 13px;
     left: 0;
     width: 123px;
     height: 1px;
@@ -68,7 +74,7 @@
 
   .form-group--contacts .form-group__title::after {
     position: absolute;
-    top: 12px;
+    top: 13px;
     right: 0;
     width: 123px;
     height: 1px;
@@ -78,7 +84,40 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-group--login {
+    padding-left: 79px;
+    padding-bottom: 70px;
+  }
 
+  .form-group--login .form-group__field {
+    max-width: 404px;
+  }
 
+  .form-group__field-contacts-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 50%;
+    column-gap: 79px;
+  }
 
+  .form-group--contacts .field__label {
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+
+  .form-group--contacts .form-group__field {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-group--contacts .form-group__title {
+    margin-bottom: 71px;
+  }
+
+  .form-group--contacts .form-group__title::before {
+    width: 280px;
+  }
+
+  .form-group--contacts .form-group__title::after {
+    width: 280px;
+  }
 }
