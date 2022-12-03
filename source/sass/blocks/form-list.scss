@@ -40,7 +40,7 @@
 
   .form-list--attractions {
     grid-column: 1 / -1;
-    padding-bottom: 41px;
+    padding-bottom: 21px;
   }
 
   .form-list--attractions .form-list__list {
@@ -82,8 +82,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-list--attractions {
+    padding-bottom: 19px;
+  }
+
   .form-list--attractions .form-list__list {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form-list--attractions .form-list__title::before {

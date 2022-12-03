@@ -63,3 +63,13 @@
     padding: 18px 21px 24px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback-form__label::before {
+    width: 280px;
+  }
+
+  .feedback-form__label::after {
+    width: 280px;
+  }
+}
