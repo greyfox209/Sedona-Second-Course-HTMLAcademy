@@ -1,7 +1,7 @@
 {
-  "name": "sedona",
+  "name": "sedona-22",
   "private": true,
-  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
@@ -12,8 +12,8 @@
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "3.0.0",
     "postcss": "8.2.8",
-    "stylelint": "13.13.1",
-    "stylelint-config-htmlacademy": "0.1.10"
+    "stylelint": "13.12.0",
+    "stylelint-config-htmlacademy": "0.1.4"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
@@ -36,6 +36,6 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^12 || ^14"
+    "node": "14.15.0"
   }
 }
