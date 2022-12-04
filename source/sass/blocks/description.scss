@@ -17,13 +17,15 @@
 
 @media (min-width: $tablet-width) {
   .description__title {
-    padding-left: 166px;
-    padding-right: 167px;
     font-size: 30px;
   }
 
   .description__text {
     margin: 0 auto;
     max-width: 436px;
+  }
+
+  .description__text--catalog {
+    max-width: 458px;
   }
 }

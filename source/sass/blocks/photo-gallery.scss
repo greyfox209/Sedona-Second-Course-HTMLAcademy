@@ -2,6 +2,11 @@
   line-height: 24px;
 }
 
+.photo-gallery__list {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .photo-gallery__item {
   padding: 21px 0 15px;
   border-top: 1px solid $grey-300;
@@ -31,6 +36,8 @@
   .photo-gallery__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .photo-gallery__item:first-child {
@@ -41,5 +48,7 @@
 @media (min-width: $desktop-width) {
   .photo-gallery__list {
     grid-template-columns: repeat(3, 1fr);
+    padding-left: 0;
+    padding-right: 0;
   }
 }
