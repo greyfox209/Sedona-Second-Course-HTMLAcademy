@@ -31,14 +31,24 @@
 }
 
 .page-main__video-gallery-wrapper {
+  position: relative;
   padding-top: 32px;
   margin-bottom: 49px;
-  border-top: 1px solid $grey-300;
 }
 
 @media (max-width: $mobile-width) {
   .page-main__text-wrap {
     display: none;
+  }
+
+  .page-main__video-gallery-wrapper::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $grey-300;
+    content: "";
   }
 }
 
@@ -80,6 +90,13 @@
   .page-main__catalog-description-wrapper {
     padding: 64px 0 64px;
   }
+
+  .page-main__video-gallery-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 58px;
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -100,5 +117,10 @@
 
   .page-main__catalog-description-wrapper {
     padding: 102px 0 67px;
+  }
+
+  .page-main__video-gallery-wrapper {
+    padding-top: 63px;
+    margin-bottom: 85px;
   }
 }
