@@ -1,4 +1,4 @@
-.panel__bar {
+.panel__bar-wrapper {
   position: relative;
   width: 280px;
   height: 45px;
@@ -7,7 +7,7 @@
   background-color: rgba($black, 0.6);
 }
 
-.panel__handle {
+.panel__bar {
   position: absolute;
   top: 22px;
   left: 22px;
@@ -17,7 +17,7 @@
   content: "";
 }
 
-.panel__handle::before {
+.panel__handle {
   position: absolute;
   top: -3px;
   left: 36px;
@@ -71,7 +71,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .panel__bar {
+  .panel__bar-wrapper {
     width: 440px;
     height: 93px;
     margin-top: -93px;
@@ -80,13 +80,13 @@
     z-index: 1;
   }
 
-  .panel__handle {
+  .panel__bar {
     top: 45px;
     left: 22px;
     width: 389px;
   }
 
-  .panel__handle::before {
+  .panel__handle {
     left: 113px;
   }
 
@@ -118,11 +118,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .panel__bar {
+  .panel__bar-wrapper {
     width: 590px;
   }
 
-  .panel__handle {
+  .panel__bar {
     width: 540px;
   }
 
