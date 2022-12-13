@@ -100,13 +100,17 @@
     grid-column: 1 / -1;
   }
 
-  .advantages__item--pictured:nth-child(1) img {
-    grid-column: 2 / -1;
+  .advantages__image {
+    grid-column: span 2;
   }
 
-  .advantages__item--pictured:nth-child(2) img {
-    grid-column: 1 / 3;
+  .advantages__image--bridge {
     order: -1;
+  }
+
+  .advantages__item--pictured img {
+    width: 512px;
+    height: 256px;
   }
 
   .advantages__card:nth-child(1) {
@@ -147,6 +151,10 @@
 
   .advantages__item--text-wrap-desktop {
     display: none;
+  }
+
+  .advantages__item--text-wrap-tablet {
+    display: block;
   }
 }
 
@@ -189,6 +197,10 @@
   .advantages__description {
     padding-left: 53px;
     padding-right: 52px;
+  }
+
+  .advantages__item--pictured img {
+    width: 800px;
   }
 
   .advantages__item--text-wrap-tablet {
