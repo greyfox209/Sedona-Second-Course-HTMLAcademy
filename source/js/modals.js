@@ -1,16 +1,25 @@
 let modal = document.querySelector('.modal');
+let modalOpen = document.querySelector('.modal--open');
 let modalSuccess = document.querySelector('.modal--success');
+let modalFailure = document.querySelector('.modal--failure');
 let submitButton = document.querySelector('.review-form__button');
-let modalClose = document.querySelector('.modal__button');
+let modalCloseSuccess = document.querySelector('.modal__button--success');
+let modalCloseFailure = document.querySelector('.modal__button--failure');
 
 submitButton.addEventListener ('click', function (evt) {
   evt.preventDefault();
-  modal.classList.add('modal--open');
+  modalSuccess.classList.add('modal--open');
+  modalFailure.classList.add('modal--open');
 });
 
-modalClose.addEventListener ('click', function (evt) {
+modalCloseSuccess.addEventListener ('click', function (evt) {
   evt.preventDefault();
-  modal.classList.remove('modal--open');
+  modalSuccess.classList.remove('modal--open');
+});
+
+modalCloseFailure.addEventListener ('click', function (evt) {
+  evt.preventDefault();
+  modalFailure.classList.remove('modal--open');
 });
 
 
