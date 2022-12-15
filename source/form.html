@@ -75,7 +75,8 @@
             <p class="form-group__title">Контактная информация:</p>
             <div class="form-group__field-contacts-wrapper">
               <div class="form-group__field field field--contacts">
-                <label class="field__label" for="telephone"><span class="field__label--hide">Контактный</span> телефон*:</label>
+                <label class="field__label" for="telephone"><span class="field__label--hide">Контактный</span>
+                  телефон*:</label>
                 <input class="field__input field__input--telephone" id="telephone" type="text" name="telephone"
                   placeholder="Введите телефон">
               </div>
@@ -95,11 +96,13 @@
                 <label class="radio__label" for="positive-review">Скорее положительное</label>
               </li>
               <li class="radio">
-                <input class="visually-hidden radio__input" type="radio" name="impression" value="negative" id="negative-review">
+                <input class="visually-hidden radio__input" type="radio" name="impression" value="negative"
+                  id="negative-review">
                 <label class="radio__label" for="negative-review">Скорее отрицательное</label>
               </li>
               <li class="radio">
-                <input class="visually-hidden radio__input" type="radio" name="impression" value="indefinite" id="indefinite-review">
+                <input class="visually-hidden radio__input" type="radio" name="impression" value="indefinite"
+                  id="indefinite-review">
                 <label class="radio__label" for="indefinite-review">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -112,7 +115,8 @@
                 <label class="checkbox__label" for="review-bridge">Мост Дьявола</label>
               </li>
               <li class="checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" checked name="mountain" id="review-mountain">
+                <input class="visually-hidden checkbox__input" type="checkbox" checked name="mountain"
+                  id="review-mountain">
                 <label class="checkbox__label" for="review-mountain">Гора-Колокол</label>
               </li>
               <li class="checkbox">
@@ -166,9 +170,32 @@
         </a>
       </div>
     </footer>
+
+    <section class="modal modal--success modal--close">
+      <div class="modal__text-block modal__text-block--success">
+        <p class="modal__title">Ваш отзыв отправлен!</p>
+        <p class="modal__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. <br>В ближайшее время мы
+          опубликуем его на сайте.</p>
+      </div>
+      <div class="modal__button-block">
+        <button class="button modal__button modal__button--success">Закрыть окно</button>
+      </div>
+    </section>
+
+    <section class="modal modal--failure modal--close">
+      <div class="modal__text-block modal__text-block--failure">
+        <p class="modal__title">Что-то пошло не так!</p>
+        <p class="modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      </div>
+      <div class="modal__button-block modal__button-block--failure">
+        <button class="button modal__button modal__button--failure">Ок</button>
+      </div>
+    </section>
+
   </div>
 
   <script src="js/navigation.js"></script>
+  <script src="js/modals.js"></script>
 
 </body>
 
