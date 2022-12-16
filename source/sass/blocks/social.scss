@@ -18,6 +18,18 @@
   background-color: $blue;
 }
 
+.social__link:hover {
+  background-color: $blue-200;
+}
+
+.social__link:active {
+  background-color: $blue-300;
+}
+
+.social__link:active::before {
+  opacity: 0.3;
+}
+
 .social__link::before {
   position: absolute;
   background-position: center;

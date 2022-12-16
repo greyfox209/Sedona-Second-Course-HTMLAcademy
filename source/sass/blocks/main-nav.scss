@@ -17,6 +17,14 @@
     cursor: pointer;
   }
 
+  .main-nav__toggle:hover {
+    opacity: 0.6;
+  }
+
+  .main-nav__toggle:active {
+    opacity: 0.3;
+  }
+
   .main-nav--closed .main-nav__toggle::before {
     position: absolute;
     top: calc(50% - 2px);
@@ -29,7 +37,7 @@
   }
 
   .main-nav--opened .main-nav__toggle {
-    background-color: $blue;
+    background-color: transparent;
     border-bottom: 1px solid $blue-150;
   }
 
@@ -74,6 +82,23 @@
     display: block;
   }
 
+  .main-nav__item .main-nav__link:hover {
+    background-color: $blue-200;
+  }
+
+  .main-nav__item .main-nav__link:active {
+    color: rgba($white, 0.3);
+    background-color: $blue-300;
+  }
+
+  .main-nav__item .main-nav__link:disabled {
+    background-color: $grey-300;
+  }
+
+  .main-nav__item:last-child .main-nav__link {
+    box-shadow: inset 0 -11px 5px -7px rgba($black, 0.2);
+  }
+
   .main-nav__link {
     display: block;
     padding: 10px 0 5px;
@@ -107,5 +132,25 @@
     padding-top: 15px;
     padding-bottom: 15px;
     color: $black;
+  }
+
+  .main-nav__item .main-nav__link:hover {
+    color: $blue;
+  }
+
+  .main-nav__item .main-nav__link:active {
+    color: rgba($black, 0.3);
+  }
+
+  .main-nav__item .main-nav__link--current {
+    color: $brown;
+  }
+
+  .main-nav__item .main-nav__link--current:hover {
+    color: $brown-200;
+  }
+
+  .main-nav__item .main-nav__link--current:active {
+    color: rgba($brown, 0.3);
   }
 }

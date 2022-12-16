@@ -7,3 +7,16 @@
   margin: 0;
   margin-right: 13px;
 }
+
+.copyright__link svg {
+  vertical-align: middle;
+}
+
+.copyright__link:hover path {
+  fill: $blue;
+}
+
+.copyright__link:active path {
+  fill: $black;
+  opacity: 0.3;
+}

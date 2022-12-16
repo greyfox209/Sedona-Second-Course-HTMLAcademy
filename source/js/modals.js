@@ -22,4 +22,20 @@ modalCloseFailure.addEventListener ('click', function (evt) {
   modalFailure.classList.remove('modal--open');
 });
 
+window.addEventListener('keydown', function (evt) {
+  if (evt.key === 'Esc' || evt.key === 'Escape') {
+    if (modalSuccess.classList.contains('modal--open')) {
+      evt.preventDefault();
+      modalSuccess.classList.remove('modal--open');
+    }
+  }
+});
 
+window.addEventListener('keydown', function (evt) {
+  if (evt.key === 'Esc' || evt.key === 'Escape') {
+    if (modalFailure.classList.contains('modal--open')) {
+      evt.preventDefault();
+      modalFailure.classList.remove('modal--open');
+    }
+  }
+});
