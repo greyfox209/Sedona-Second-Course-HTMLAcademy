@@ -29,6 +29,14 @@
   content: "";
 }
 
+.radio__input + .radio__label:hover::before {
+  background-color: $grey-300;
+}
+
+.radio__input + .radio__label:active::before {
+  background-color: $grey-400;
+}
+
 .radio__input:checked + .radio__label::after {
   position: absolute;
   top: 15px;
@@ -38,6 +46,10 @@
   background-color: $grey-700;
   border-radius: 50%;
   content: "";
+}
+
+.radio__input:checked + .radio__label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {

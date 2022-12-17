@@ -21,6 +21,17 @@
   color: $black;
   background-color: $grey-200;
   border: none;
+  outline: none;
+}
+
+.field__input:hover {
+  background-color: $grey-300;
+}
+
+.field__input:focus {
+  background-color: $white;
+  outline: 4px solid $grey-300;
+  outline-offset: -4px;
 }
 
 .field__input--telephone {

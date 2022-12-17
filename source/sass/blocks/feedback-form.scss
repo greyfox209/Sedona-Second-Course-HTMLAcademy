@@ -21,6 +21,16 @@
   resize: none;
 }
 
+.feedback-form__text:hover {
+  background-color: $grey-300;
+}
+
+.feedback-form__text:focus {
+  background-color: $white;
+  outline: 4px solid $grey-300;
+  outline-offset: -4px;
+}
+
 .feedback-form__text::placeholder {
   font-size: 18px;
   font-weight: 700;

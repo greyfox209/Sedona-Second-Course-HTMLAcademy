@@ -70,6 +70,15 @@
   content: "";
 }
 
+.panel__button-icon:hover {
+  fill: $grey-700;
+}
+
+.panel__button-icon:active {
+  fill: $grey-700;
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .panel__bar-wrapper {
     width: 440px;
@@ -97,8 +106,18 @@
     background-color: rgba($black, 0.6);
   }
 
-  .panel__button path {
+  .panel__button-icon {
     fill: $white;
+  }
+
+  .panel__button-icon:hover {
+    fill: $white;
+    opacity: 0.6;
+  }
+
+  .panel__button-icon:active {
+    fill: $white;
+    opacity: 0.3;
   }
 
   .panel__button--play {

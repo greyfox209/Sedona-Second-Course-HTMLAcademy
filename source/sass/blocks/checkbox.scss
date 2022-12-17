@@ -31,6 +31,14 @@
   content: "";
 }
 
+.checkbox__input + .checkbox__label:hover:before {
+  background-color: $grey-300;
+}
+
+.checkbox__input + .checkbox__label:active:before {
+  background-color: $grey-400;
+}
+
 .checkbox__input:checked + .checkbox__label::after {
   position: absolute;
   top: 16px;
@@ -40,6 +48,10 @@
   background-image: url(../img/tick.svg);
   background-repeat: no-repeat;
   content: "";
+}
+
+.checkbox__input:checked + .checkbox__label:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
