@@ -42,6 +42,11 @@
   margin-right: 14px;
 }
 
+.photo-gallery__likes-icon {
+  opacity: 0.3;
+  fill: $black;
+}
+
 @media (max-width: $mobile-width) {
   .photo-gallery__item::before {
     position: absolute;
@@ -124,7 +129,7 @@
     background-color: rgba($black, 0.3);
   }
 
-  .photo-gallery__likes-icon path {
+  .photo-gallery__likes-icon {
     opacity: 1;
     fill: $white;
   }
