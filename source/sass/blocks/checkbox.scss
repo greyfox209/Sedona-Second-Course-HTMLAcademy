@@ -31,11 +31,11 @@
   content: "";
 }
 
-.checkbox__input + .checkbox__label:hover:before {
+.checkbox__input + .checkbox__label:hover::before {
   background-color: $grey-300;
 }
 
-.checkbox__input + .checkbox__label:active:before {
+.checkbox__input + .checkbox__label:active::before {
   background-color: $grey-400;
 }
 
@@ -45,7 +45,7 @@
   left: 12px;
   width: 24px;
   height: 16px;
-  background-image: url(../img/tick.svg);
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   content: "";
 }

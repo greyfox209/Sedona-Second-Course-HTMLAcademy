@@ -3,7 +3,7 @@
   justify-content: center;
   padding: 52px 0 67px;
   text-align: center;
-  background-image: url(../img/intro-triangle.svg), url(../img/back-mobile.jpg);
+  background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 100%;
@@ -54,7 +54,7 @@
 
 @media (min-width: $tablet-width) {
   .page-main__intro {
-    background-image: url(../img/intro-triangle.svg), url(../img/back-desktop.jpg);
+    background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
   }
 
   .page-main__intro--main-page {
