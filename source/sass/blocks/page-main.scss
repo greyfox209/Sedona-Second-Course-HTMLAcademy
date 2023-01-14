@@ -21,7 +21,7 @@
 }
 
 .page-main__catalog-description-wrapper {
-  padding: 31px 20px 20px;
+  padding: 22px 20px 40px;
 }
 
 .page-main__review-form-wrapper {
@@ -32,8 +32,8 @@
 
 .page-main__video-gallery-wrapper {
   position: relative;
-  padding-top: 32px;
-  margin-bottom: 49px;
+  padding-top: 34px;
+  margin-bottom: 39px;
 }
 
 @media (max-width: $mobile-width) {
@@ -88,7 +88,7 @@
   }
 
   .page-main__catalog-description-wrapper {
-    padding: 64px 0 64px;
+    padding: 60px 0 81px;
   }
 
   .page-main__video-gallery-wrapper {
@@ -106,7 +106,7 @@
 
   .page-main__description-wrapper {
     padding-top: 114px;
-    padding-bottom: 56px;
+    padding-bottom: 40px;
   }
 
   .page-main__review-form-wrapper {
@@ -116,7 +116,7 @@
   }
 
   .page-main__catalog-description-wrapper {
-    padding: 102px 0 67px;
+    padding: 102px 0 81px;
   }
 
   .page-main__video-gallery-wrapper {

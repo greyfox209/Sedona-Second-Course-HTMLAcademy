@@ -38,11 +38,11 @@ exports.styles = styles;
 
 //HTML
 
-const html = (done) => {
+const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
-};
+}
 
 exports.html = html;
 

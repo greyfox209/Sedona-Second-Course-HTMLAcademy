@@ -79,6 +79,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .form-list--impression .form-list__title {
+    text-align: center;
+  }
+
   .form-list--attractions {
     padding-bottom: 19px;
   }
