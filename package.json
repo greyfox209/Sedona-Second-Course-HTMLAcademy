@@ -2,6 +2,7 @@
   "name": "sedona-22",
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
+  "homepage": "https://greyfox209.github.io/Sedona-Second-Course-HTMLAcademy/",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "10.2.5",
@@ -28,7 +29,9 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp"
+    "start": "gulp",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": [
     "last 2 versions",
@@ -45,5 +48,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
