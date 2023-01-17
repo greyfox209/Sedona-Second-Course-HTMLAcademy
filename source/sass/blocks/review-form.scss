@@ -1,7 +1,18 @@
+.review-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
 .review-form__item {
   position: relative;
+  display: flex;
+  flex-direction: column;
   padding-top: 20px;
   padding-bottom: 23px;
+}
+
+.review-form__item:not(.review-form__item--feedback) {
+  align-items: center;
 }
 
 .review-form__item:nth-child(5) {
@@ -10,6 +21,7 @@
 
 .review-form__button {
   width: 280px;
+  align-self: center;
 }
 
 .review-form__comment {
@@ -38,6 +50,10 @@
   .review-form__form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-form__item {
+    display: block;
   }
 
   .review-form__button {

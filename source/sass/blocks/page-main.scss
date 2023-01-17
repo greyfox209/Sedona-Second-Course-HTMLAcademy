@@ -1,12 +1,24 @@
 .page-main__intro {
+  position: relative;
   display: flex;
   justify-content: center;
   padding: 52px 0 67px;
   text-align: center;
-  background-image: url("../img/intro-triangle.svg"), url("../img/back-mobile.jpg");
+  background-image: url("../img/back-desktop.jpg");
   background-repeat: no-repeat;
   background-position-x: 50%;
-  background-position-y: 100%;
+  background-position-y: 20%;
+  content: "";
+}
+
+.page-main__intro::after {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/intro-triangle.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
   content: "";
 }
 
@@ -15,9 +27,15 @@
   padding: 90px 0 85px;
 }
 
+.page-main__intro--form-page {
+  background-position-y: 100%;
+}
+
 .page-main__description-wrapper {
   padding-top: 36px;
   padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .page-main__catalog-description-wrapper {
@@ -53,10 +71,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__intro {
-    background-image: url("../img/intro-triangle.svg"), url("../img/back-desktop.jpg");
-  }
-
   .page-main__intro--main-page {
     height: 350px;
     padding: 77px 0 91px;
@@ -64,6 +78,7 @@
 
   .page-main__intro--form-page {
     padding: 95px 0 117px;
+    background-position-y: 100%;
   }
 
   .page-main__intro-image--main-page {

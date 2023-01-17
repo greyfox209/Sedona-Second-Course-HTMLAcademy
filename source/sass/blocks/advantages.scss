@@ -34,6 +34,12 @@
   background-color: $blue;
 }
 
+.advantages__item--img {
+  height: 260px;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .advantages__card:nth-child(1) {
   padding-top: 34px;
   padding-bottom: 39px;
@@ -72,8 +78,8 @@
   }
 
   .advantages__card .advantages__description {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
   .advantages__item--text-wrap-tablet {
