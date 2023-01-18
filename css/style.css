@@ -390,8 +390,7 @@ fieldset {
   background-color: #eeeeee; }
 
 .advantages__item--pictured {
-  color: #ffffff;
-  background-color: #81b3d2; }
+  color: #ffffff; }
 
 .advantages__item--img {
   height: 260px;
@@ -399,6 +398,9 @@ fieldset {
      object-fit: cover;
   -o-object-position: bottom;
      object-position: bottom; }
+
+.advantages__card {
+  background-color: #81b3d2; }
 
 .advantages__card:nth-child(1) {
   padding-top: 34px;
@@ -426,10 +428,20 @@ fieldset {
   line-height: 21px; }
 
 @media (max-width: 767px) {
-  .advantages__item:first-child {
-    padding-top: 14px;
+  .advantages__list {
+    position: relative; }
+  .advantages__list::before {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 21px;
     background-image: url("../img/intro-triangle2-mobile.svg");
-    background-repeat: no-repeat; }
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    content: ""; }
+  .advantages__item:first-child {
+    padding-top: 14px; }
   .advantages__card .advantages__description {
     padding-left: 22px;
     padding-right: 22px; }
@@ -543,7 +555,7 @@ fieldset {
 .town-advantages__item--housing::before {
   position: absolute;
   top: 25px;
-  left: 21px;
+  left: 17px;
   width: 40px;
   height: 38px;
   background-image: url("../img/icon-house.svg");
@@ -563,7 +575,7 @@ fieldset {
 .town-advantages__item--souvenirs::before {
   position: absolute;
   top: -12px;
-  left: 25px;
+  left: 20px;
   width: 40px;
   height: 38px;
   background-image: url("../img/icon-gift.svg");
@@ -934,6 +946,10 @@ fieldset {
   font-size: 18px;
   font-weight: bold;
   text-transform: none; }
+
+@media (max-width: 767px) {
+  .form-list__list {
+    width: 280px; } }
 
 @media (min-width: 768px) {
   .form-list--impression {
