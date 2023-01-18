@@ -13,6 +13,12 @@
   text-transform: none;
 }
 
+@media (max-width: $mobile-width) {
+  .form-list__list {
+    width: 280px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .form-list--impression {
     order: -1;

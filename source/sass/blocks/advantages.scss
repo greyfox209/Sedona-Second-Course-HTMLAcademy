@@ -31,13 +31,16 @@
 
 .advantages__item--pictured {
   color: $white;
-  background-color: $blue;
 }
 
 .advantages__item--img {
   height: 260px;
   object-fit: cover;
   object-position: bottom;
+}
+
+.advantages__card {
+  background-color: $blue;
 }
 
 .advantages__card:nth-child(1) {
@@ -71,10 +74,24 @@
 }
 
 @media (max-width: $mobile-width) {
+  .advantages__list {
+    position: relative;
+  }
+
+  .advantages__list::before {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    width: 100%;
+    height: 21px;
+    background-image: url("../img/intro-triangle2-mobile.svg");
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
   .advantages__item:first-child {
     padding-top: 14px;
-    background-image: url("../img/intro-triangle2-mobile.svg");
-    background-repeat: no-repeat;
   }
 
   .advantages__card .advantages__description {
